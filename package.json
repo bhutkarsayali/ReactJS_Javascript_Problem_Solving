@@ -1,0 +1,30 @@
+{
+  "name": "reactjs_javascript_problem_solving",
+  "version": "1.0.0",
+  "description": "Problem solving in ReactJs and Modern Javascript",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhutkarsayali/ReactJS_Javascript_Problem_Solving.git"
+  },
+  "keywords": [
+    "reactJs",
+    "JavaScript"
+  ],
+  "author": "Sayali Bhutkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhutkarsayali/ReactJS_Javascript_Problem_Solving/issues"
+  },
+  "homepage": "https://github.com/bhutkarsayali/ReactJS_Javascript_Problem_Solving#readme",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
