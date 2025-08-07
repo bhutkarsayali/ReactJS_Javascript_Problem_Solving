@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/bhutkarsayali/ReactJS_Javascript_Problem_Solving#readme",
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "parcel": "^2.15.4"
