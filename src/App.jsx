@@ -4,8 +4,9 @@ import Body from "./components/Body";
 import "./../index.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
 import Error from "./components/Error";
-import ReactIndexPage from "./components/React/ReactIndexPage";
-import JavaScriptIndexPage from "./components/JavaScript/JavaScriptIndexPage";
+import ReactIndexPage from "./components/components-react/ReactIndexPage";
+import Accordion from "./components/components-react/Accordion";
+import JavaScriptIndexPage from "./components/components-javaScript/JavaScriptIndexPage";
 
 const App = () => {
   return (
@@ -28,6 +29,10 @@ const appRoute = createBrowserRouter([
       {
         path: "/react",
         element: <ReactIndexPage />,
+      },
+      {
+        path: "/react/accordion",
+        element: <Accordion />,
       },
       {
         path: "/javascript",
