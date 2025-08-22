@@ -7,6 +7,9 @@ import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactIndexPage from "./components/react_comps/ReactIndexPage.jsx";
 import JavaScriptIndexPage from "./components/js_comps/JavaScriptIndexPage.jsx";
+import AccordionPage from "./components/react_comps/AccordionPage.jsx";
+import ChipsInputPage from "./components/react_comps/ChipsInputPage.jsx";
+import InterviewQuestions from "./components/InterviewQuestions.jsx";
 
 const appRoute = createBrowserRouter([
   {
@@ -21,13 +24,21 @@ const appRoute = createBrowserRouter([
         path: "/react",
         element: <ReactIndexPage />,
       },
-      // {
-      //   path: "/react/accordion",
-      //   element: <AccordionPage />,
-      // },
+      {
+        path: "/accordion",
+        element: <AccordionPage />,
+      },
+      {
+        path: "/chips",
+        element: <ChipsInputPage />,
+      },
       {
         path: "/javascript",
         element: <JavaScriptIndexPage />,
+      },
+      {
+        path: "/questions",
+        element: <InterviewQuestions />,
       },
     ],
     errorElement: <Error />,

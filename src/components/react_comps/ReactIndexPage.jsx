@@ -1,11 +1,31 @@
-import { Link } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import reactProblemList from "../../utils/reactProblemList";
-import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addClickedIssueView } from "./../../store/reactProblemsSlice";
+// import { useState } from "react";
 
 const ReactIndexPage = ({ hideTitle }) => {
-  const [displayPage, setDisplayPage] = useState(null);
-  const handleProblemClick = (tagname) => {
-    console.log(tagname);
+  // const [displayPage, setDisplayPage] = useState(null);
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleProblemClick = (currentView) => {
+    console.log(currentView);
+    dispatch(addClickedIssueView(currentView));
+
+    if (location.pathname === "/react") {
+      switch (currentView) {
+        case "accordion":
+          navigate("/accordion");
+          break;
+        case "chips":
+          navigate("/chips");
+          break;
+      }
+    } else {
+      console.log("User is not on /react — no redirect");
+    }
   };
   return (
     <div className="">

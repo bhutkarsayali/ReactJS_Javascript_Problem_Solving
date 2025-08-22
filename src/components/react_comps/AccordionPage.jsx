@@ -12,8 +12,8 @@ const AccordionPage = () => {
     setopenIndex(openIndex === index ? null : index);
   };
   return (
-    <>
-      <div className="p-6 bg-gray-50 rounded-lg shadow-sm text-gray-800 text-sm leading-relaxed">
+    <div className="flex">
+      <div className="p-6 bg-gray-50 rounded-lg shadow-md shadow-black text-gray-800 text-sm leading-relaxed w-1/2">
         <h2 className="text-xl font-semibold mb-4">
           📂 Accordion Component Task
         </h2>
@@ -74,7 +74,7 @@ const AccordionPage = () => {
           Component name: <code>Accordion</code>
         </p>
       </div>
-      <div className="w-5/12 absolute m-auto top-[180px] left-0 right-0">
+      <div className="p-6 bg-gray-50 rounded-lg shadow-md shadow-black text-gray-800 text-sm leading-relaxed w-1/2">
         <h2>1. Accordion with array item id as key</h2>
         {/* Using arrayItem.id as a key */}
         <div className="mb-14">
@@ -136,7 +136,7 @@ const AccordionPage = () => {
           If you click on item 3, it opens item 3 and closes item 2.
         </div>
       </div>{" "}
-    </>
+    </div>
   );
 };
 

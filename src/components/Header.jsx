@@ -13,6 +13,9 @@ const Header = () => {
         <Link to={"./javascript"}>
           <li className="mx-5 cursor-pointer">JavaScript</li>
         </Link>
+        <Link to={"./questions"}>
+          <li className="mx-5 cursor-pointer">Interview Questions</li>
+        </Link>
       </ul>
     </div>
   );

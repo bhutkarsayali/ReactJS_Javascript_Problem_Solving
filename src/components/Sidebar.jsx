@@ -9,7 +9,7 @@ const Sidebar = () => {
   const toggleJs = () => setIsJsOpen((prev) => !prev);
 
   return (
-    <div className="w-3/12 bg-gray-800 text-white p-5 !h-[calc(100%-104px)] fixed">
+    <div className="w-3/12 bg-gray-800 text-white p-5 !h-[calc(100%-104px)] fixed overflow-y-auto">
       <div className="flex flex-col">
         <div className="react-wrapper">
           <div
